@@ -1,13 +1,7 @@
 import React, { useState } from 'react';
 import { getAIAnswer } from '../api/geminiApi';
+import trainingGuide from '../trainingGuide_400QA'; // ✅ use only this one
 import axios from 'axios';
-
-const trainingGuide = `
-1. Greet callers with: "Thank you for calling Hotel Reservations. My name is [Agent Name], how may I assist you?"
-2. For refunds, never promise. Say: "I will check the policy and if approved, refunds are processed in 2–10 business days."
-3. Always ask for itinerary number, guest name, hotel name, and check-in/out dates for verification.
-4. For group requests, start with: "What city and state is your group traveling to?"
-`;
 
 const FAQForm = () => {
   const [question, setQuestion] = useState('');
