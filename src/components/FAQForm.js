@@ -19,7 +19,8 @@ const FAQForm = () => {
     setAnswer(aiAnswer);
 
     try {
-      await axios.post('http://localhost:5001/log', {
+      await axios.post('https://faq-hotelplanner-1.onrender.com/log', {
+
         question,
         answer: aiAnswer,
       });
