@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 const GEMINI_URL =
-  'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' +
-  process.env.REACT_APP_GEMINI_API_KEY;
+  'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCbvuVn6tS_C7P4pw_7kWoNio-wLe1kWR4';
 
 export const getAIAnswer = async (question, trainingGuideContext) => {
   const payload = {
