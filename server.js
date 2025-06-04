@@ -2,10 +2,10 @@ const express = require('express');
 const { google } = require('googleapis');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const credentials = require('./hotelplannerfaq-074806d52418.json'); // Make sure this filename matches yours
+const credentials = require('./hotelplannerfaq-074806d52418.json');
 
 const app = express();
-const PORT = 5001;
+const PORT = process.env.PORT || 5001; // ✅ FIXED
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -41,5 +41,5 @@ app.post('/log', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`✅ Server running at http://localhost:${PORT}`);
+  console.log(`✅ Server running on port ${PORT}`);
 });
