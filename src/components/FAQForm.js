@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { getAIAnswer } from '../api/geminiApi';
-import trainingGuide from '../trainingGuide_400QA'; // ✅ use only this one
+import trainingGuide from '../trainingGuide_1000QA';
+
 import axios from 'axios';
 
 const FAQForm = () => {

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: faq-assistant-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    autoDeploy: true
+    envVars:
+      - key: GOOGLE_APPLICATION_CREDENTIALS
+        value: hotelplannerfaq-074806d52418.json
