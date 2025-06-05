@@ -2999,7 +2999,7 @@ A: Documenting calls protects everyone and ensures future agents have context. I
 Q1000. How do I document hotel approval or denial?
 A: Documenting calls protects everyone and ensures future agents have context. Include who you spoke to, what was said, and the outcome. Always be clear and neutral.
 Q1001. How to redeem a voucher ?
-A: Once the guest receives the Voucher they can go to HotelPlanner.com and book a room using the voucher or call us to book it for them
+A: Guests can redeem their voucher by visiting HotelPlanner.com/voucher to book a room, or by calling us directly to have an agent assist with the booking.
 `;
 
 export default trainingGuide;
